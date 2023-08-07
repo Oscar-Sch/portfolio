@@ -2,7 +2,10 @@
   import Navigation from "./components/Navigation.vue";
   import MainContent from "./components/MainContent.vue";
   import Loading from "./components/Loading.vue";
-  import {computed} from "vue"
+  // import Vue from 'vue'
+  // import EasySlider from 'vue-easy-slider'
+
+  // Vue.use(EasySlider)
   // import About from "./components/About.vue";
 
   export default{
@@ -78,6 +81,8 @@
       inset: 0;
       background: rgb(166,147,122);
       background: linear-gradient(0deg, rgba(166,147,122,1) 0%, rgba(142,121,92,1) 2%, rgba(118,100,72,1) 49%, rgba(116,97,69,1) 97%, rgba(79,67,50,1) 100%); 
+      -webkit-mask-image: url(./assets/images/chipped-mask-final.png);
+      -webkit-mask-size: contain;
       mask-image: url(./assets/images/chipped-mask-final.png);
       mask-size: contain;
       transform: rotateX(180deg);
@@ -90,7 +95,7 @@
     background: #181e17;
     border-radius: 8rem;
     box-shadow: 0 .5rem .8rem #fff8,0 -.5rem .8rem #0008,0 0 0 .5rem #000 inset,0 0 8rem .5rem #fff5 inset;
-    padding: 3rem;
+    padding: 2.5rem;
     overflow: hidden;
     z-index: 1;
   }
